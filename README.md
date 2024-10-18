@@ -1,4 +1,4 @@
-## Shared Element Transition in Jetpack Compose
+## Transitions in Jetpack Compose
 
 For detailed explanation, visit this [blog](https://canopas.com/exploring-shared-element-transition-with-navigation-in-compose-7a4c5885deb2)
 
