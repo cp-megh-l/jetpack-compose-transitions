@@ -1,12 +1,12 @@
-package com.example.sharedelementtransitionsample.data
+package com.example.sharedelementtransitionsample.data.shoes
 
 import androidx.compose.ui.graphics.Color
 import com.example.sharedelementtransitionsample.R
-import com.example.sharedelementtransitionsample.model.Brand
-import com.example.sharedelementtransitionsample.model.ShoesDetails
-import com.example.sharedelementtransitionsample.model.Shoe
+import com.example.sharedelementtransitionsample.model.shoes.Brand
+import com.example.sharedelementtransitionsample.model.shoes.ShoesDetails
+import com.example.sharedelementtransitionsample.model.shoes.Shoe
 
-object Utils {
+object ShoesUtils {
     val brandList = listOf(
         Brand(id = 1, name = "Nike", country = "USA"),
         Brand(id = 2, name = "Adidas", country = "Germany"),
@@ -298,5 +298,4 @@ object Utils {
             image = R.drawable.ic_shoes_2
         )
     )
-
 }

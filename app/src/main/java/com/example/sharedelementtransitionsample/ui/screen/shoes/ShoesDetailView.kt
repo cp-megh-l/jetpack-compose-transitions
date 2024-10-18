@@ -44,8 +44,8 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.geometry.Rect
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import com.example.sharedelementtransitionsample.data.Constants
-import com.example.sharedelementtransitionsample.model.Shoe
+import com.example.sharedelementtransitionsample.data.shoes.ShoesConstants
+import com.example.sharedelementtransitionsample.model.shoes.Shoe
 
 @OptIn(ExperimentalSharedTransitionApi::class, ExperimentalMaterial3Api::class,
     ExperimentalAnimationSpecApi::class
@@ -70,7 +70,7 @@ fun ShoesDetailView(
                             text = shoe.name,
                             color = MaterialTheme.colorScheme.onPrimary,
                             modifier = Modifier.sharedElement(
-                                rememberSharedContentState(key = "${Constants.KEY_SHOE_TITLE}-$index"),
+                                rememberSharedContentState(key = "${ShoesConstants.KEY_SHOE_TITLE}-$index"),
                                 animatedVisibilityScope = animatedVisibilityScope,
                                 boundsTransform = textBoundsTransform
                             )
@@ -92,7 +92,7 @@ fun ShoesDetailView(
                     actions = {
                         IconButton(
                             onClick = { /*TODO*/ }, modifier = Modifier.sharedElement(
-                                rememberSharedContentState(key = "${Constants.KEY_FAVOURITE_ICON}-$index"),
+                                rememberSharedContentState(key = "${ShoesConstants.KEY_FAVOURITE_ICON}-$index"),
                                 animatedVisibilityScope = animatedVisibilityScope,
                                 boundsTransform = textBoundsTransform
                             )
@@ -127,7 +127,7 @@ fun ShoesDetailView(
                     .clip(RoundedCornerShape(16.dp))
                     .background(shoe.color)
                     .sharedElement(
-                        rememberSharedContentState(key = "${Constants.KEY_BACKGROUND}-$index"),
+                        rememberSharedContentState(key = "${ShoesConstants.KEY_BACKGROUND}-$index"),
                         animatedVisibilityScope = animatedVisibilityScope,
                         boundsTransform = boundsTransform
                     )
@@ -145,7 +145,7 @@ fun ShoesDetailView(
                         .fillMaxWidth()
                         .aspectRatio(1.5f)
                         .sharedElement(
-                            rememberSharedContentState(key = "${Constants.KEY_SHOE_IMAGE}-$index"),
+                            rememberSharedContentState(key = "${ShoesConstants.KEY_SHOE_IMAGE}-$index"),
                             animatedVisibilityScope = animatedVisibilityScope,
                             boundsTransform = boundsTransform
                         )

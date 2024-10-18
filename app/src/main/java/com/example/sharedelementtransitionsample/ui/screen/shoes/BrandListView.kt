@@ -16,7 +16,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.unit.dp
-import com.example.sharedelementtransitionsample.model.Brand
+import com.example.sharedelementtransitionsample.model.shoes.Brand
 
 @Composable
 fun BrandsListView(brandsList: List<Brand>, onBrandSelected: (Brand) -> Unit = {}) {
