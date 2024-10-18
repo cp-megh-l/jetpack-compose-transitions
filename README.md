@@ -1,4 +1,8 @@
-## Transitions in Jetpack Compose
+# Transitions in Jetpack Compose
+
+An open-source collection of Jetpack Compose transition samples, currently featuring shared element transitions and parallax effects, with plans to include more animation techniques in the future. 
+
+## Explore Detailed Implementations
 
 For detailed explanation, visit 
 
