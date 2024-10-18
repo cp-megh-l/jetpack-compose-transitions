@@ -40,8 +40,8 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.zIndex
 import androidx.navigation.NavController
-import com.example.sharedelementtransitionsample.data.Constants
-import com.example.sharedelementtransitionsample.model.Shoe
+import com.example.sharedelementtransitionsample.data.shoes.ShoesConstants
+import com.example.sharedelementtransitionsample.model.shoes.Shoe
 import kotlin.math.absoluteValue
 
 @OptIn(ExperimentalSharedTransitionApi::class)
@@ -150,7 +150,7 @@ fun LazyItemScope.ShoeItemView(
                         .clip(RoundedCornerShape(16.dp))
                         .background(shoe.color)
                         .sharedElement(
-                            rememberSharedContentState(key = "${Constants.KEY_BACKGROUND}-$currentPage"),
+                            rememberSharedContentState(key = "${ShoesConstants.KEY_BACKGROUND}-$currentPage"),
                             animatedVisibilityScope = animatedVisibilityScope,
                             boundsTransform = boundsTransform
                         )
@@ -167,7 +167,7 @@ fun LazyItemScope.ShoeItemView(
                         .padding(16.dp)
                         .align(Alignment.TopStart)
                         .sharedElement(
-                            rememberSharedContentState(key = "${Constants.KEY_SHOE_TITLE}-$currentPage"),
+                            rememberSharedContentState(key = "${ShoesConstants.KEY_SHOE_TITLE}-$currentPage"),
                             animatedVisibilityScope = animatedVisibilityScope,
                             boundsTransform = textBoundsTransform
                         )
@@ -179,7 +179,7 @@ fun LazyItemScope.ShoeItemView(
                         .align(Alignment.TopEnd)
                         .padding(8.dp)
                         .sharedElement(
-                            rememberSharedContentState(key = "${Constants.KEY_FAVOURITE_ICON}-$currentPage"),
+                            rememberSharedContentState(key = "${ShoesConstants.KEY_FAVOURITE_ICON}-$currentPage"),
                             animatedVisibilityScope = animatedVisibilityScope,
                             boundsTransform = textBoundsTransform
                         )
@@ -215,7 +215,7 @@ fun LazyItemScope.ShoeItemView(
                     }
                     .offset(x = shoesOffsetX.dp, y = 0.dp)
                     .sharedElement(
-                        rememberSharedContentState(key = "${Constants.KEY_SHOE_IMAGE}-$currentPage"),
+                        rememberSharedContentState(key = "${ShoesConstants.KEY_SHOE_IMAGE}-$currentPage"),
                         animatedVisibilityScope = animatedVisibilityScope,
                         boundsTransform = boundsTransform
                     )

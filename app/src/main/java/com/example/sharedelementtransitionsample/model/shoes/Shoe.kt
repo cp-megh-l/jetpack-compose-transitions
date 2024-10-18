@@ -1,4 +1,4 @@
-package com.example.sharedelementtransitionsample.model
+package com.example.sharedelementtransitionsample.model.shoes
 
 import androidx.compose.ui.graphics.Color
 

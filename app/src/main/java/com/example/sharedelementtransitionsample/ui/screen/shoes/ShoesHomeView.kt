@@ -28,19 +28,19 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import com.example.sharedelementtransitionsample.data.Utils
-import com.example.sharedelementtransitionsample.model.Brand
-import com.example.sharedelementtransitionsample.model.Shoe
+import com.example.sharedelementtransitionsample.data.shoes.ShoesUtils
+import com.example.sharedelementtransitionsample.model.shoes.Brand
+import com.example.sharedelementtransitionsample.model.shoes.Shoe
 
 @OptIn(ExperimentalSharedTransitionApi::class)
 @Composable
 fun ShoesHomeView() {
 
     val brandsList by remember {
-        mutableStateOf(Utils.brandList)
+        mutableStateOf(ShoesUtils.brandList)
     }
     val shoesList by remember {
-        mutableStateOf(Utils.shoeList)
+        mutableStateOf(ShoesUtils.shoeList)
     }
 
     SharedTransitionLayout(modifier = Modifier.fillMaxSize()) {

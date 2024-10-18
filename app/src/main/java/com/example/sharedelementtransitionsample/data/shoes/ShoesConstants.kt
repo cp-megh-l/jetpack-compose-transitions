@@ -1,6 +1,6 @@
-package com.example.sharedelementtransitionsample.data
+package com.example.sharedelementtransitionsample.data.shoes
 
-object Constants {
+object ShoesConstants {
     const val KEY_BACKGROUND = "background"
     const val KEY_SHOE_TITLE = "shoe-title"
     const val KEY_FAVOURITE_ICON = "favourite-icon"
