@@ -7,7 +7,7 @@ An open-source collection of Jetpack Compose transition samples, currently featu
 For detailed explanation, visit 
 
 - [shared-element-transition-blog](https://canopas.com/exploring-shared-element-transition-with-navigation-in-compose-7a4c5885deb2)
-- [parallax-effect-blog](https://dev-stack.canopas.com/how-to-create-a-parallax-movie-pager-in-jetpack-compose-ab9c1e19d2cb)
+- [parallax-effect-blog](https://canopas.com/how-to-create-a-parallax-movie-pager-in-jetpack-compose-ab9c1e19d2cb)
 
 
 <table>
